@@ -26,6 +26,12 @@ public class Movie {
 		this.director = director;
 	}
 
+	public Movie(int id, String name, int year) {
+		this.id = id;
+		this.year = year;
+		this.name = name;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -64,6 +70,11 @@ public class Movie {
 
 	public void setDirector(Director director) {
 		this.director = director;
+	}
+
+	@Override
+	public String toString() {
+		return "Movie [id=" + id + ", year=" + year + ", name=" + name + "]";
 	}
 	
 	
